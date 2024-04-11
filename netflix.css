@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #000;
+}
+
+.background {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url("bg_image2.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60vw;
+}
+
+.logo {
+    height: 40px;
+    width: 160px;
+
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    color: white;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;
+    font-size: 0.95rem;
+    padding: 4px 16px;
+    font-weight: 550;
+}
+
+button span {
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: rgba(229, 9, 20, 0.8);
+    cursor: pointer;
+}
+
+.middleSection {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleSectionContent {
+    margin-top: 10vh;
+    width: 80%;
+    height: 50vh;
+}
+
+h1,
+h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+p {
+    margin: 16px 0px 0px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.middleSectionContent h1 {
+    text-align: center;
+}
+
+.middleSectionContent p {
+    text-align: center;
+}
+
+h3 {
+    margin: 16px 0px 0px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.middleRemaining {
+    height: 9vh;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 1rem 0.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: transparent;
+    height: 100%;
+    width: 30%;
+}
+
+.middleRemaining button {
+    width: 20%;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+.mainSection {
+    height: 320vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    height: 80vh;
+    border-top: 10px solid rgba(128, 128, 128, 0.3);
+    padding: 4.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemContent {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.itemContent1 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item2 .itemContent,
+.item4 .itemContent {
+    flex-direction: row-reverse;
+}
+
+.item1 .itemContent2 {
+    background-image: url("feature-1.png");
+}
+
+.item2 .itemContent2 {
+    background-image: url("feature-2.png");
+}
+
+.item4 .itemContent2 {
+    background-image: url("feature-3.png");
+}
+
+.itemContent2 {
+    width: 45%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.FAQ {
+    /* height: 100vh; */
+    height: auto;
+}
+
+.FAQContent {
+    width: 80%;
+    height: 100%;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: space-between; */
+}
+
+.FAQ h2 {
+    text-align: center;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accordion__content {
+    display: none;
+    background-color: #2d2d2d;
+    color: white;
+    margin-top: 1px;
+    padding: 1.5rem;
+}
+
+.accordion__content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.accordion__button {
+    border: none;
+    border-radius: 0px;
+    /* height: 100%; */
+    background-color: #2d2d2d;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 10vh;
+}
+
+.accordion button {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0px 1.5rem;
+}
+
+.accordion__button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.accordion__content.active {
+    display: block;
+    max-height: 500px;
+}
+
+.accordion span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.accordion__icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.accordion__button.active .accordion__icon {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+footer {
+    border-top: 10px solid rgba(128, 128, 128, 0.3);
+    padding: 72px 0px;
+}
+
+.footerContent {
+    width: 80%;
+    height: 100%;
+}
+
+.footerContent a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 1rem;
+    padding: 3rem 0px;
+}
+
+select {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 1rem 0.5rem;
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.footerContent p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+}
